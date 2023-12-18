@@ -1,0 +1,1 @@
+THANK YOU FOR PURCHASING THIS MODEL!!!The FBX file should have embedded textures. if not please assign them manually.If you encounter any issues, contact me though CG Trader of Discord (CraftWorks Videos#4107)If the textures don't assign automatically you might need to assign them manually.Textures are in PSD and PNG format.ENJOY!
