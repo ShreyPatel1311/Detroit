@@ -3,9 +3,134 @@ guid: a459e17f7b5878e4e94e2d123c00af65
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Atlas_1
+    second: {fileID: 2100000, guid: 159a9aaa0e09d0643817dd1a358b621e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Default_Material
+    second: {fileID: 2100000, guid: 1862a91f20218744da750ca6f0701d42, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass_01
+    second: {fileID: 2100000, guid: 8a60391392ed74749b6a1d4dbdba7e39, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grade1
+    second: {fileID: 2100000, guid: 72ae8d2b7bfd9a14598d954e90f92ed4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grade2
+    second: {fileID: 2100000, guid: f8a45f7c2cf1e5d4b9ad8a0c0d0558f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grass_01
+    second: {fileID: 2100000, guid: a3ca649b57801f4408b90d58fc9d7855, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grass_Splat
+    second: {fileID: 2100000, guid: ce2a02e5594d3ac49b16f995bec81ace, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: b0e84061be05fdf4c886b723a5c69ec4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roads
+    second: {fileID: 2100000, guid: 11158de8ee9cda547a3c0e701fa1de7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tires
+    second: {fileID: 2100000, guid: aaa9429edbde9c7408f4ee92467624c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Traffic_Car_Atlas
+    second: {fileID: 2100000, guid: 677cfb4185679be49a686f524d53e088, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trees_01
+    second: {fileID: 2100000, guid: 9abfd74da37fe6843b4ecca3d8ce2c36, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Water
+    second: {fileID: 2100000, guid: a461d5214bfb8e047ac75ff7a3a8ea13, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wins
+    second: {fileID: 2100000, guid: eedd71843ff4a3846bdb07ea1c188416, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Atlas-1
+    second: {fileID: 2800000, guid: e272028fd143f9f4b9aeb66559d08174, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Grade1
+    second: {fileID: 2800000, guid: c0e80c0fc948f0e4a9abe4644222666e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Grade2
+    second: {fileID: 2800000, guid: 8370412b739b7a0428dc55cd869053f9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Grass-01
+    second: {fileID: 2800000, guid: d7c3e4e54c071d84bba21532c14e6e01, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2800000, guid: 8a0cffd57545e0348a91a794f993f670, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Roads
+    second: {fileID: 2800000, guid: 126378d3573e0e64eb46c1312e61b91c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tires
+    second: {fileID: 2800000, guid: 99171518999d831498e605e841f380c6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Traffic-Car-Atlas
+    second: {fileID: 2800000, guid: 549e51d9141472643968a36543a3870f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Trees-01
+    second: {fileID: 2800000, guid: dffbdd9a698521b4e830ffc332e86f65, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Water
+    second: {fileID: 2800000, guid: 4e63a94e196ecf148b77f34965370e6c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wins
+    second: {fileID: 2800000, guid: c3d23386a51ff4b4583f9a3e0827b357, type: 3}
   materials:
-    materialImportMode: 2
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
