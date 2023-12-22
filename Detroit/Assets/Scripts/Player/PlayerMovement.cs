@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float playerSpeed = 2.0f;
     [SerializeField] private float jumpHeight = 1.0f;
     [SerializeField] private float gravityValue = -9.81f;
+    [SerializeField] private float rotationSpeed = 1.0f;
 
     [Header("input System Variables")]
     [SerializeField] private PlayerInput pInp;
@@ -39,14 +40,11 @@ public class PlayerMovement : MonoBehaviour
             playerVelocity.y = 0f;
         }
 
-        Vector2 motion = move.ReadValue<Vector2>();
-        Vector3 moveValue = new Vector3(motion.x, 0, motion.y);
-        cc.Move(moveValue * Time.deltaTime * playerSpeed);
-
-        if (moveValue != Vector3.zero)
-        {
-            gameObject.transform.forward = moveValue;
-        }
+        Vector2 input = move.ReadValue<Vector2>();
+        Vector3 motion = new Vector3(input.x, 0, input.y);
+        motion = motion.x * Camera.main.transform.right.normalized + motion.z * Camera.main.transform.forward.normalized;
+        motion.y = 0f;
+        cc.Move(motion * Time.deltaTime * playerSpeed);
 
         // Changes the height position of the player..
         if (jump.triggered && groundedPlayer)
@@ -55,7 +53,8 @@ public class PlayerMovement : MonoBehaviour
         }
         if (look.triggered)
         {
-            transform.forward = 
+            Quaternion rotation = Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0);
+            transform.rotation = Quaternion.Lerp(rotation, transform.rotation, rotationSpeed * Time.deltaTime);
         }
 
         playerVelocity.y += gravityValue * Time.deltaTime;
