@@ -2367,6 +2367,7 @@ GameObject:
   - component: {fileID: 4362324178327484816}
   - component: {fileID: 127808443259982271}
   - component: {fileID: 2213208459414448466}
+  - component: {fileID: 605452172332383086}
   m_Layer: 0
   m_Name: Dimtri Vegas
   m_TagString: Untagged
@@ -2474,6 +2475,27 @@ MonoBehaviour:
   gravityValue: -9.81
   rotationSpeed: 0.2
   pInp: {fileID: 127808443259982271}
+--- !u!95 &605452172332383086
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7246603130228715245}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: ff555072358414b43aeb2ffe3201dad9, type: 3}
+  m_Controller: {fileID: 9100000, guid: 4697f70f727b759478d596d12eeed0d0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7264582612518876483
 GameObject:
   m_ObjectHideFlags: 0

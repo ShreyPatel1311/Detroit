@@ -16,8 +16,8 @@ public class PlayerMovement : MonoBehaviour
     private InputAction move;
     private InputAction shoot;
     private InputAction jump;
-    
 
+    private Animator anim;
     private CharacterController cc;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     {
         cc = GetComponent<CharacterController>();
         pInp = GetComponent<PlayerInput>();
+        anim = GetComponent<Animator>();
         look = pInp.actions["Look"];
         move = pInp.actions["Move"];
         shoot = pInp.actions["Shoot"];
@@ -45,6 +46,17 @@ public class PlayerMovement : MonoBehaviour
         motion = motion.x * Camera.main.transform.right.normalized + motion.z * Camera.main.transform.forward.normalized;
         motion.y = 0f;
         cc.Move(motion * Time.deltaTime * playerSpeed);
+
+        if (move.IsInProgress())
+        {
+            anim.SetBool("Move", true);
+            anim.SetFloat("walkX", input.x);
+            anim.SetFloat("walkY", input.y);
+        }
+        else
+        {
+            anim.SetBool("Move", false);
+        }
 
         // Changes the height position of the player..
         if (jump.triggered && groundedPlayer)
