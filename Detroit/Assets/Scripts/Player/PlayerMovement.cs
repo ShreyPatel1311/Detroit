@@ -21,12 +21,14 @@ public class PlayerMovement : MonoBehaviour
     private CharacterController cc;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
+    private Transform cameraTransform;
 
     private void Start()
     {
         cc = GetComponent<CharacterController>();
         pInp = GetComponent<PlayerInput>();
         anim = GetComponent<Animator>();
+        cameraTransform = Camera.main.transform;
         look = pInp.actions["Look"];
         move = pInp.actions["Move"];
         shoot = pInp.actions["Shoot"];
@@ -43,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
 
         Vector2 input = move.ReadValue<Vector2>();
         Vector3 motion = new Vector3(input.x, 0, input.y);
-        motion = motion.x * Camera.main.transform.right.normalized + motion.z * Camera.main.transform.forward.normalized;
+        motion = motion.x * cameraTransform.right.normalized + motion.z * cameraTransform.forward.normalized;
         motion.y = 0f;
         cc.Move(motion * Time.deltaTime * playerSpeed);
 
@@ -65,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (look.triggered)
         {
-            Quaternion rotation = Quaternion.Euler(0, Camera.main.transform.eulerAngles.y, 0);
+            Quaternion rotation = Quaternion.Euler(0, cameraTransform.eulerAngles.y, 0);
             transform.rotation = Quaternion.Lerp(rotation, transform.rotation, rotationSpeed * Time.deltaTime);
         }
 

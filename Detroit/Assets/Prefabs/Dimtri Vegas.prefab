@@ -2470,10 +2470,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ea685ecc21e31341add9f4613cc6a6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 2
+  playerSpeed: 5
   jumpHeight: 2
   gravityValue: -9.81
-  rotationSpeed: 0.2
+  rotationSpeed: 5
   pInp: {fileID: 127808443259982271}
 --- !u!95 &605452172332383086
 Animator:
