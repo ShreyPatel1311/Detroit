@@ -57,7 +57,7 @@ MonoBehaviour:
     overrideState: 1
     value: 10
   directLightingStrength:
-    overrideState: 0
+    overrideState: 1
     value: 0
   radius:
     overrideState: 0
@@ -139,4 +139,4 @@ MonoBehaviour:
     value: 50
   kernelSize:
     overrideState: 1
-    value: 3
+    value: 1
