@@ -16,14 +16,14 @@ MonoBehaviour:
   m_LookDevVolumeProfile: {fileID: 11400000, guid: 6df212d004e2ed74e925a9928e2bc4ac, type: 2}
   m_RenderingPathDefaultCameraFrameSettings:
     bitDatas:
-      data1: 140735303122765
-      data2: 18374686548391067672
+      data1: 140735303033677
+      data2: 18374686544096124944
     lodBias: 1
     lodBiasMode: 0
-    lodBiasQualityLevel: 0
+    lodBiasQualityLevel: 2
     maximumLODLevel: 0
     maximumLODLevelMode: 0
-    maximumLODLevelQualityLevel: 0
+    maximumLODLevelQualityLevel: 2
     sssQualityMode: 0
     sssQualityLevel: 2
     sssCustomSampleBudget: 20
@@ -46,16 +46,16 @@ MonoBehaviour:
     materialQuality: 0
   m_RenderingPathDefaultRealtimeReflectionFrameSettings:
     bitDatas:
-      data1: 140185466576717
-      data2: 18374686485308768272
+      data1: 140735223168845
+      data2: 18374686529063706648
     lodBias: 1
     lodBiasMode: 0
-    lodBiasQualityLevel: 0
+    lodBiasQualityLevel: 2
     maximumLODLevel: 0
     maximumLODLevelMode: 0
-    maximumLODLevelQualityLevel: 0
+    maximumLODLevelQualityLevel: 2
     sssQualityMode: 0
-    sssQualityLevel: 0
+    sssQualityLevel: 2
     sssCustomSampleBudget: 20
     msaaMode: 1
     materialQuality: 0
