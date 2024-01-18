@@ -510,6 +510,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8991180395804559355}
     m_Modifications:
+    - target: {fileID: 127808443259982271, guid: 55e32edbb01ddb24db35e7e24abf8eec, type: 3}
+      propertyPath: m_Actions
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: fa23a1f54adcfec418ef191e3a43ab32, type: 3}
     - target: {fileID: 4026564995562741732, guid: 55e32edbb01ddb24db35e7e24abf8eec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -554,11 +558,68 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dimtri Vegas
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2213208459414448466, guid: 55e32edbb01ddb24db35e7e24abf8eec, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7246603130228715245, guid: 55e32edbb01ddb24db35e7e24abf8eec, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6045653560258580500}
+    - targetCorrespondingSourceObject: {fileID: 7246603130228715245, guid: 55e32edbb01ddb24db35e7e24abf8eec, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2021801251050556529}
   m_SourcePrefab: {fileID: 100100000, guid: 55e32edbb01ddb24db35e7e24abf8eec, type: 3}
+--- !u!1 &919462918264264257 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7246603130228715245, guid: 55e32edbb01ddb24db35e7e24abf8eec, type: 3}
+  m_PrefabInstance: {fileID: 7517507784155150508}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6045653560258580500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919462918264264257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c8f70f2b9e525547a99d3d80886a6b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  assaultRifle: {fileID: 0}
+  playerSpeed: 2
+  jumpHeight: 1
+  gravityValue: -9.81
+  bulletMissDis: 25
+  animTransition: 0.15
+  refrenceLOS: {fileID: 919462918264264257}
+  anim: {fileID: 6932572592751576002}
+  svc: {fileID: 0}
+  walkClip: {fileID: 0}
+--- !u!114 &2021801251050556529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919462918264264257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4706e72bc4ed3f40b2661bdb95f6ccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: Infinity
+  viewAngle: 110
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  obstructLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  offset: 1
+  meshResoultion: 0
+  visibleEnemy: []
 --- !u!4 &4948692693538737447 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3242244600005375371, guid: 55e32edbb01ddb24db35e7e24abf8eec, type: 3}
@@ -567,5 +628,10 @@ Transform:
 --- !u!4 &6895774123579352904 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4026564995562741732, guid: 55e32edbb01ddb24db35e7e24abf8eec, type: 3}
+  m_PrefabInstance: {fileID: 7517507784155150508}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &6932572592751576002 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 605452172332383086, guid: 55e32edbb01ddb24db35e7e24abf8eec, type: 3}
   m_PrefabInstance: {fileID: 7517507784155150508}
   m_PrefabAsset: {fileID: 0}
